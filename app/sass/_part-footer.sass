@@ -1,0 +1,89 @@
+@import 'vars'
+@import 'base'
+
+.footer
+  margin-top: 100px
+  .supfooter
+    background-color: $green
+    .footer-img-logo
+      display: block
+      img
+        display: block
+        margin: 0 auto
+        padding: 20px 0
+        width: 200px
+    .footer-social-icons
+      padding-bottom: 20px
+      a
+        margin: 0 5px
+        cursor: pointer
+      i
+        color: #fff
+        &:hover
+          color: $blue
+          transition: $transition
+          -moz-transition: $transition
+          -webkit-transition: $transition
+          -o-transition: $transition
+.subfooter
+  background-color: $blue
+  .footer-menu
+  ul
+    margin-top: 20px
+    list-style-type: none
+  li a
+    margin: 0 20px
+    font-size: 0.9em
+    color: #fff
+    cursor: pointer
+    &:hover
+      background-color: rgba(255, 255, 255, 0) !important
+      color: $green
+      transition: 0.2s ease
+      text-decoration: none
+    &:focus
+      background-color: rgba(255, 255, 255, 0) !important
+  .footer-contact-info
+    margin-top: 50px
+    p
+      font-size: 0.85em
+      color: #fff
+      i
+        margin-right: 10px
+        font-size: 15px
+      a
+        color: #fff
+  .copyright
+    margin-top: 100px
+    font-size: 0.7em
+    color: #fff
+    p
+      display: inline
+    a
+      text-decoration: none
+      i
+        display: block
+        margin: 15px
+        color: #fff
+        &:hover
+          color: $green
+          transition: $transition
+          -moz-transition: $transition
+          -webkit-transition: $transition
+          -o-transition: $transition
+.list-inline
+  margin-left: 0
+
+.footer-contact-info-xs
+  padding: 10px 0
+  font-size: 0.8em
+  color: #fff
+  text-align: center
+  ul
+    padding: 0
+    box-sizing: border-box
+    li
+      padding: 5px 0
+
+.footer-contact-info-xs
+  display: none

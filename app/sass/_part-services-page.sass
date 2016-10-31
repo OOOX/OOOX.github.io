@@ -1,0 +1,187 @@
+@import 'vars'
+@import 'base'
+
+// SLIDER
+
+.sidebar__nav-services
+  display: inline-block
+  margin-top: 40px
+  h4
+    font-family: 'LucidaGrandeReg', sans-serif !important
+    padding-bottom: 5px
+  ul
+    font-size: 0.9em
+    margin-top: 45px
+    padding: 0
+    list-style-type: none
+    li
+      line-height: 3.5
+      &:last-child
+        margin-top: 100px
+    a
+      display: inline
+      color: $lead_text_color
+    .btn-signform
+      border: 1px solid $blue
+      color: $blue
+      transition: $transition
+      &:hover
+        color: #fff
+        background-color: $blue
+        border: 1px solid $blue
+.sidebar__nav-services ul li a
+  &:hover
+    border-bottom: none
+    color: $blue
+  &:active
+    color: $green
+
+
+// SERVICES
+
+
+h1
+  margin: 45px 0 0 0
+.service__intro-text
+  margin: 45px 0 0 0
+  padding-left: 17px
+  color: $text_color
+  border-left: 2px solid $blue
+
+.service__img img
+  display: inline-block
+  float: right
+  max-width: 44%
+  margin-top: 30px
+
+.service__table
+  margin-top: 90px
+  th
+    padding: 15px 30px !important
+    background-color: $blue
+    color: #fff
+    border-bottom: none !important
+    cursor: pointer
+    span
+      padding: 5px 10px
+      vertical-align: bottom
+  tbody
+    tr
+      td
+        padding-right: 30px
+        padding-left: 30px
+        cursor: pointer
+
+
+.service__brands, .service__brands[value="02"]
+  width: 55%
+  height: 33px
+  margin-top: 50px
+  background-image: url("../img/brands/hairdress-brands.svg")
+  background-repeat: no-repeat
+  background-size: 100%
+.service__brands[value="02"]
+  background-image: url("../img/brands/cosmetology-brands.svg")
+
+.service__masters
+  margin: 150px 0 250px 0
+
+.service__masters-info
+  margin-top: 65px
+  img
+    display: inline-block
+    margin-bottom: 25px
+  .service__info-phone
+    padding: 0
+    margin-bottom: 60px
+    margin-right: 14px
+    font-size: 0.9em
+    i
+      margin-right: 10px
+      font-size: 1.1em
+      color: $blue
+      vertical-align: middle
+
+
+.active
+  a
+    color: $green !important
+    border-left: 1px solid $green
+
+th[value="true"]
+  background-color: $green !important
+  color: #fff !important
+
+p[value="true"]
+  border-color: $green !important
+
+// SIGN-FORM
+
+
+.contact-form-wrapper
+  background: url("../img/pattern.png")
+  padding: 30px
+#mainSignForm
+  h2
+    margin-left: 17%
+    margin-bottom: 70px
+  label
+    color: $lead_text_color
+    text-align: left
+  input[type="text"], input[type="tel"]
+    font-size: 16px
+    height: 55px
+    border-radius: 0px
+    border: none
+    border-bottom: 0px solid transparent
+    transition: 0.1s ease-in-out
+    box-shadow: none
+    line-height: normal
+    text-indent: 1.5%
+    &:required:valid
+      border-bottom: 2px solid $checkgreen
+    &:focus:required:invalid
+      border-bottom: 2px solid #f81f1f
+  button
+    margin-top: 20px
+    border: none
+    border-radius: 0px
+    background-color: $blue
+    transition: $transition
+    &:hover
+      transform: scale(0.98)
+      background-color: $checkgreen
+  .form-control[readonly]
+    background-color: #fff
+
+.modal .modal-icon-wrapper
+  margin-bottom: 10px
+  i
+    color: $green
+
+.caret
+  margin: -2px 0 0 5px
+
+.help-block
+  margin: 14px 0
+  li
+    color: #f81f1f
+
+.form--error-animate li
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both
+  transform: translate3d(0, 0, 0)
+  backface-visibility: hidden
+  perspective: 1000px
+
+@keyframes shake
+  10%, 90%
+    transform: translate3d(-1px, 0, 0)
+
+  20%, 80%
+    transform: translate3d(2px, 0, 0)
+
+  30%, 50%, 70%
+    transform: translate3d(-4px, 0, 0)
+
+  40%, 60%
+    transform: translate3d(4px, 0, 0)

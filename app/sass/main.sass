@@ -1,0 +1,77 @@
+@import 'vars'
+@import 'base'
+@import 'fonts'
+@import 'part-header'
+@import 'part-footer'
+@import 'part-contacts'
+@import 'part-services-page'
+@import 'app/libs/font-awesome/scss/font-awesome.scss'
+@import 'app/libs/datedropper/datedropper'
+@import 'app/libs/owl-carousel/owl-carousel/owl.theme'
+@import 'app/libs/owl-carousel/owl-carousel/owl.carousel'
+@import 'app/libs/owl-carousel/owl-carousel/owl.transitions'
+
+
+html, body
+  position: relative
+  height: 100%
+  #owl-demo .item img
+    display: block
+    width: 100%
+    height: auto
+  .owl-theme .owl-controls .owl-page span
+    background: $green
+  .owl-theme .owl-controls .owl-buttons .owl-next, .owl-theme .owl-controls .owl-buttons .owl-prev,
+    background: $blue
+    opacity: .7
+    border-radius: 5px
+.carousel
+  margin-top: -87px
+  .glyphicon-chevron-left
+    background-color: #000
+.about-us
+  margin-top: 150px
+  h2
+    margin-bottom: 100px
+  .about-us__info
+    padding: 75px 0
+    border-top: 1px solid $blue
+    border-bottom: 1px solid $blue
+    p
+      padding: 0 50px
+.main-services
+  margin-top: 150px
+  h2
+    margin-bottom: 100px
+  .services-info
+    border: 1px solid $green
+    margin-bottom: 30px
+    padding: 20px 20px 0
+    h4
+      margin-bottom: 35px
+    p
+      margin-bottom: 40px
+    a
+      padding: 12px
+      color: $green
+      background-color: #fff
+      border: 1px solid $green
+      transition: $transition
+      &:hover
+        background-color: $green
+        color: #fff
+        text-decoration: none
+.advantage
+  margin-top: 150px
+  h2
+    margin-bottom: 100px
+  .advantage__content
+    padding: 20px
+    i, h4
+      margin-bottom: 30px
+.thumbnail
+  border: transparent
+.photogallery-wrap
+  margin-top: 150px
+  h2
+    margin-bottom: 100px

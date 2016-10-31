@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Camisimo: Услуги и цены</title>
+
+        <link rel="stylesheet" href="css/libs.min.css">
+        <link rel="stylesheet" href="css/main.min.css">
+        <link rel="stylesheet" href="css/media.min.css">
+
+    </head>
+    <body data-spy="scroll" data-target="#scrollSpy" data-offset="500">
+        <div id="main-wrapper">
+            <header class="headroom headroom--pinned headroom--unpinned">
+                <nav class="navbar navbar-default navbar-fixed-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="index.html"><img src="./img/logo/camisimo_logo.svg" alt="Camisimo Logo"/></a>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <a class="hover-bottom" href="index.html">Главная
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle hover-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Услуги и цены<span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#service01">Парикмахерские услуги</a>
+                                        </li>
+                                        <li>
+                                            <a href="#service02">Косметология</a>
+                                        </li>
+                                        <li>
+                                            <a href="#service03">Ногтевой сервис</a>
+                                        </li>
+                                        <li>
+                                            <a href="#service04">Депиляция</a>
+                                        </li>
+                                        <li>
+                                            <a href="#service05">Массаж</a>
+                                        </li>
+                                        <li>
+                                            <a href="#service06">Визаж</a>
+                                        </li>
+                                        <li role="separator" class="divider"></li>
+                                        <li>
+                                            <a href="#mainSignForm">Запись на сеанс</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="hover-bottom" href="#">Блог</a>
+                                </li>
+                                <li>
+                                    <a class="hover-bottom" href="contacts.html">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="row">
+                    <aside id="scrollSpy" class="col-sm-4 sidebar">
+                        <div class="sidebar__nav-affix">
+                            <div class="sidebar__nav-services">
+                                <h4 class="text-uppercase">Наши услуги</h4>
+                                <ul class="nav navbar-left">
+                                    <li class="active">
+                                        <a href="#service01">Парикмахерские услуги</a>
+                                    </li>
+                                    <li>
+                                        <a href="#service02">Косметология</a>
+                                    </li>
+                                    <li>
+                                        <a href="#service03">Ногтевой сервис</a>
+                                    </li>
+                                    <li>
+                                        <a href="#service04">Депиляция</a>
+                                    </li>
+                                    <li>
+                                        <a href="#service05">Массаж</a>
+                                    </li>
+                                    <li>
+                                        <a href="#service06">Визаж</a>
+                                    </li>
+                                    <li>
+                                        <a class="btn-signform" href="#mainSignForm">Запись на сеанс</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </aside>
+                    <script id="services-template" type="text/x-handlebars-template">
+                        {{#services}}
+                            <main id="service{{id}}">
+                                <h1>{{name}}</h1>
+                                <div class="service__img pull-right">
+                                    <img src="{{img}}" alt="{{imgAlt}}"/>
+                                </div>
+                                <p class="service__intro-text" value="{{green-border}}">{{description}}</p>
+                                <div class="service__table table-responsive">
+                                    <table class="table table-striped table-hover">
+                                        <thead>
+                                            <th value="{{green-table}}">
+                                                Название
+                                            </th>
+                                            <th class="text-right" value="{{green-table}}">
+                                                Цена (грн.)
+                                            </th>
+                                        </thead>
+                                        <tbody>
+                                            {{#each servicesData}}
+                                                <tr>
+                                                    <td>{{serviceName}}</td>
+                                                    <td class="text-right">{{servicePrice}}</td>
+                                                </tr>
+                                            {{/each}}
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="service__brands center-block" value="{{id}}"></div>
+                                <div class="service__masters text-center">
+                                    <h3>Наши мастера</h3>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="service__masters-info">
+                                                {{#each masters}}
+                                                    <img class="img-responsive" src="{{masterImg}}" alt="Мастер {{masterName}}">
+                                                    <h4>{{masterName}}</h4>
+                                                    <p class="service__info-phone">
+                                                        <i class="fa fa-phone" aria-hidden="true"></i>
+                                                        <a href="tel:{{masterPhone}}">{{masterPhone}}</a>
+                                                    </p>
+                                                    <div class="service__masters-social"></div>
+                                                {{/each}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </main>
+                        {{/services}}
+                    </script>
+
+                    <div id="services-container" class="col-sm-8 col-xs-12">
+                        <!-- TEMPLATE RENDER -->
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form id="mainSignForm" class="form-horizontal" method="POST">
+                                <h2>Запись на сеанс</h2>
+                                <div class="form-group">
+                                    <label for="inputName" class="col-sm-2 control-label">Имя: *</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" name="Имя" class="inputName form-control" data-error="Введите Ваше имя" placeholder="Введите имя" required>
+                                      <div class="help-block with-errors form--error-animate"></div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputTel" class="col-sm-2 control-label">Телефон: *</label>
+                                    <div class="col-sm-10">
+                                        <input type="tel" name="Телефон" class="inputTel form-control" data-error="Минимум 10 цифр" data-match-error="Введите Ваш телефон" data-pattern-error="Используйте цифры"  data-minlength="10" pattern="^[ 0-9]+$" placeholder="Введите телефон" required>
+                                        <div class="help-block with-errors form--error-animate">Минимум 10 цифр</div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputDate" class="col-sm-2 control-label">Дата:</label>
+                                    <div class="col-sm-10">
+                                        <input id="departure" type="text" name="Дата" class="inputDate form-control" placeholder="Выберите дату">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputService" class="col-sm-2 control-label">Услуга:</label>
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input class="inputService1" type="checkbox" name="Парикмахерские услуги">Парикмахерские услуги
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input class="inputService2" type="checkbox" name="Косметология">Косметология
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input class="inputService3" type="checkbox" name="Ногтевой сервис">Ногтевой сервис
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input class="inputService4" type="checkbox" name="Депиляция">Депиляция
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input class="inputService5" type="checkbox" name="Массаж">Массаж
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input class="inputService6" type="checkbox" name="Визаж">Визаж
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <button type="submit" class="btn btn-primary btn-lg btn-block">Отправить</button>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="_subject" value="Новая заявка"/>
+                                <input type="text" name="_gotcha" style="display:none"/>
+                            </form>
+                        </div>
+                        <!--                     <div class="callback-img">
+                            <img src="./dist/img/callback.svg" alt="callback" />
+                          </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="footerContent"></div>
+
+            <!--MODAL -->
+            <div class="modal fade bs-example-modal-sm" id="doneModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <h4 class="modal-title text-center">Спасибо за заявку!</h4>
+                        </div>
+                        <div class="modal-body text-center">
+                            <div class="modal-icon-wrapper text-center">
+                                <i class="fa fa-clock-o fa-2x" aria-hidden="true"></i>
+                            </div>
+                            Мы свяжемся с Вами в течении 15 минут.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/libs.min.js"></script>
+        <script src="js/affix.min.js"></script>
+        <script src="js/common.js"></script>
+    </body>
+</html>

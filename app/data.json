@@ -1,0 +1,274 @@
+{
+  "services": [
+    {
+      "id": "01",
+      "name": "Парикмахерские услуги",
+      "description": "Чтобы ваш образ был уникальным, а волосы сохраняли красоту и здоровье, мы начинаем услугу всегда с диагностики. В нее входят анализ состояния волос и кожи головы, а также адаптация (выбор стрижки с учетом особенностей черт лица и формы головы и рекомендации по уходу дома)",
+      "img": "./img/hairdress-img.png",
+      "imgAlt": "стрижка",
+      "masters": [
+        {
+          "masterName": "Алена",
+          "masterImg": "./img/master-01.png",
+          "masterPhone": "8 063 456 12 34"
+          },
+          {
+            "masterName": "Маша",
+            "masterImg": "./img/master-01.png",
+            "masterPhone": "8 063 543 42 13"
+          }
+      ],
+      "servicesData": [
+        {
+        "serviceName": "Прическа женская",
+        "servicePrice": "400-600"
+        },
+        {
+        "serviceName": "Прическа мужская",
+        "servicePrice": "200-250"
+        },
+        {
+        "serviceName": "Укладка",
+        "servicePrice": "150"
+      },
+      {
+        "serviceName": "Блондирование",
+        "servicePrice": "600"
+      },
+      {
+         "serviceName": "Окрашивание",
+         "servicePrice": "500"
+      },
+      {
+        "serviceName": "Придание оттенка",
+        "servicePrice": "600"
+      }
+      ]
+    },
+    {
+        "id": "02",
+        "name": "Косметология",
+        "description": "Аппаратные процедуры CAMISIMO предоставляют возможность сделать безоперационную подтяжку лица при помощи препарата Remodelling Face. Обладая современными знаниями и навыками, а также постоянно повышая квалификацию, косметологи CAMISIMO предоставляют высокий уровень качества услуг.",
+        "img": "./img/cosmetology-img.png",
+        "imgAlt": "косметология",
+        "masters": [
+          {
+            "masterName": "Елена",
+            "masterImg": "./img/master-01.png",
+            "masterPhone": "8 063 256 29 71"
+            }
+        ],
+        "servicesData": [
+          {
+            "serviceName": "Уход",
+            "servicePrice": "200"
+          },
+          {
+            "serviceName": "Обертывание (детокс)",
+            "servicePrice": "500"
+          },
+          {
+            "serviceName": "AHA пилинг",
+            "servicePrice": "800"
+          },
+          {
+            "serviceName": "AHA пилинг + маска",
+            "servicePrice": "900-1000"
+          },
+          {
+            "serviceName": "Уход “жирная кожа”",
+            "servicePrice": "600"
+          },
+          {
+            "serviceName": "Чистка пилинг",
+            "servicePrice": "600"
+          }
+        ],
+        "green-border": "true",
+        "green-table": "true"
+    },
+    {
+        "id": "03",
+        "name": "Ногтевой сервис",
+        "description": "Наши специалисты – профессиональные мастера маникюра и педикюра, имеющие специальный медицинский опыт. Каждый из них прошел обучение аппаратного педикюра SÜDA и имеют сертификат европейского качества. У нас вы не только получите самый красивый маникюр Харькова, но и всегда здоровые, ухоженные ногти.",
+        "img": "./img/nails-img.png",
+        "imgAlt": "маникюр",
+        "masters": [
+          {
+            "masterName": "Марина",
+            "masterImg": "./img/master-01.png",
+            "masterPhone": "8 063 256 29 71"
+          },
+          {
+            "masterName": "Оля",
+            "masterImg": "./img/master-01.png",
+            "masterPhone": "8 063 333 42 11"
+            }
+        ],
+        "servicesData": [
+          {
+            "serviceName": "Комплексный маникюр (классический, аппаратный)",
+            "servicePrice": "150"
+          },
+          {
+            "serviceName": "Форма ногтей",
+            "servicePrice": "500"
+          },
+          {
+            "serviceName": "Покрытие ногтей френч",
+            "servicePrice": "250"
+          },
+          {
+            "serviceName": "Снятие покрытия гель-лака",
+            "servicePrice": "100"
+          },
+          {
+            "serviceName": "Парафиновая маска для рук",
+            "servicePrice": "600"
+          },
+          {
+            "serviceName": "Удаление мозолей/натоптышей",
+            "servicePrice": "150"
+          },
+          {
+            "serviceName": "Комплексный педикюр",
+            "servicePrice": "400"
+          }
+        ]
+    },
+    {
+        "id": "04",
+        "name": "Депиляция",
+        "description": "Аппаратные процедуры CAMISIMO предоставляют возможность сделать безоперационную подтяжку лица при помощи препарата Remodelling Face. Обладая современными знаниями и навыками, а также постоянно повышая квалификацию, косметологи CAMISIMO предоставляют высокий уровень качества услуг.",
+        "img": "./img/depilation-img.png",
+        "imgAlt": "косметология",
+        "masters": [
+          {
+            "masterName": "Наташа",
+            "masterImg": "./img/master-01.png",
+            "masterPhone": "8 063 341 23 31"
+            }
+        ],
+        "servicesData": [
+          {
+            "serviceName": "Депиляция бикини “Экстра”",
+            "servicePrice": "500"
+          },
+          {
+            "serviceName": "Депиляция бикини",
+            "servicePrice": "300"
+          },
+          {
+            "serviceName": "Депиляция рук",
+            "servicePrice": "200"
+          },
+          {
+            "serviceName": "Депиляция подмышек",
+            "servicePrice": "200"
+          },
+          {
+            "serviceName": "Депиляция ног",
+            "servicePrice": "200"
+          }
+        ],
+        "green-border": "true",
+        "green-table": "true"
+    },
+    {
+        "id": "05",
+        "name": "Массаж",
+        "description": "Чудодейственные руки массажистов салона красоты CAMISIMO подарят вам все эти возможности! А используемые аромомасла, не вызывающие аллергии, придадут процедуре еще большего эффекта, заставив навсегда забыть про массажные салоны вне стен любимого салона красоты.",
+        "img": "./img/massage-img.png",
+        "imgAlt": "массаж",
+        "masters": [
+          {
+            "masterName": "Артур",
+            "masterImg": "./img/master-01.png",
+            "masterPhone": "8 063 256 29 71"
+          },
+          {
+            "masterName": "Денис",
+            "masterImg": "./img/master-01.png",
+            "masterPhone": "8 063 333 42 11"
+            }
+        ],
+        "servicesData": [
+          {
+            "serviceName": "Общий массаж (60 мин)",
+            "servicePrice": "500"
+          },
+          {
+            "serviceName": "Общий массаж (90 мин)",
+            "servicePrice": "600"
+          },
+          {
+            "serviceName": "Массаж спины (45 мин)",
+            "servicePrice": "350"
+          },
+          {
+            "serviceName": "Общий антицеллюлитный массаж (90 мин)",
+            "servicePrice": "700"
+          },
+          {
+            "serviceName": "Медовый массаж (45 мин)",
+            "servicePrice": "400"
+          },
+          {
+            "serviceName": "Рефлекторный массаж стоп (60 мин)",
+            "servicePrice": "350"
+          },
+          {
+            "serviceName": "Массаж воротниковой зоны (25 мин)",
+            "servicePrice": "250"
+          }
+        ]
+    },
+    {
+        "id": "06",
+        "name": "Визаж",
+        "description": "Если где и делать макияж в Харькове, так это у нас. Ведь мы точно знаем главный секрет, который гласит, что визаж – это не столько сама косметика, сколько умелое ее использование. А марки брендов-партнеров, чьими косметическими средствами мы пользуемся, и которые вы без проблем можете у нас приобрести, твердо убедят вас в том, что благодаря их качественной косметике, вы получаете лучший визаж в Харькове.",
+        "img": "./img/makeup-img.png",
+        "imgAlt": "визаж",
+        "masters": [
+          {
+            "masterName": "Юлия",
+            "masterImg": "./img/master-01.png",
+            "masterPhone": "8 063 341 23 31"
+          },
+          {
+            "masterName": "Ира",
+            "masterImg": "./img/master-01.png",
+            "masterPhone": "8 063 341 23 31"
+          }
+        ],
+        "servicesData": [
+          {
+            "serviceName": "Оформление бровей",
+            "servicePrice": "200"
+          },
+          {
+            "serviceName": "Коррекция бровей",
+            "servicePrice": "120"
+          },
+          {
+            "serviceName": "Окраска бровей",
+            "servicePrice": "120"
+          },
+          {
+            "serviceName": "Докраска ресниц",
+            "servicePrice": "100"
+          },
+          {
+            "serviceName": "Окрашивание хной",
+            "servicePrice": "200"
+          },
+          {
+            "serviceName": "Наращивание ресниц",
+            "servicePrice": "600"
+          }
+        ],
+        "green-border": "true",
+        "green-table": "true"
+    }
+  ]
+}
