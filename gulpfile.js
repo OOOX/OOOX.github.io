@@ -41,7 +41,7 @@ gulp.task('scripts', function () {
 });
 
 gulp.task('css-libs', ['sass'], function () {
-  return gulp.src(['app/css/libs.css', 'app/css/main.css', 'app/css/media.css'])
+  return gulp.src(['app/css/libs.css', 'app/css/main.css', 'app/css/media.css', 'app/css/header.css', 'app/css/fonts.css'])
     .pipe(cssnano())
     .pipe(rename({
       suffix: '.min'
@@ -91,7 +91,9 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function () {
     'app/css/main.css',
     'app/css/main.min.css',
     'app/css/libs.min.css',
-    'app/css/media.min.css'
+    'app/css/media.min.css',
+    'app/css/header.min.css',
+    'app/css/fonts.min.css'
   ])
   .pipe(gulp.dest('dist/css'));
 
