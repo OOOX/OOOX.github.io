@@ -10,6 +10,12 @@
 * [SimpleLightBox](http://lokeshdhakar.com/projects/lightbox2/)
 * [DateDropper](http://felicegattuso.com/projects/datedropper/)
 * [PACE](http://github.hubspot.com/pace/docs/welcome/)
+## Инструменты разработчика
+* [Gulp](http://gulpjs.com)
+* [Sass](http://sass-lang.com)
+* [Bower](https://bower.io)
+
+
 
 
 
