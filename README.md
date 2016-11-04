@@ -1,4 +1,4 @@
-# Camisimo
+# Camisimo (Камисимо) - салон красоты, г. Харьков
 ![Demo image](https://github.com/OOOX/OOOX.github.io/blob/master/dist/img/demo-img.png "Demo image")
 
 Предварительная демонстрация сайта для коммерческого использования. Дизайн и верстка реализованы с помощью следующих инструментов Front-End разработчика:
