@@ -1,5 +1,16 @@
 # Camismo
-Салон красоты г. Харьков. Демонстрация сайта
+Салон красоты, г. Харьков. Демонстрация сайта. Дизайн и верстка реализованы с помощью следующих инструментов Front-End разработчика:
+
+## Инструменты разработчика
+* [Gulp](http://gulpjs.com)
+* [Sass](http://sass-lang.com)
+* [Bower](https://bower.io)
+
+## Инструменты разработки дизайна
+* Adobe Photoshop
+* Sketch
+* Adobe Illustrator
+
 ## Фреймворки и библиотеки
 * [Bootstrap 3](http://getbootstrap.com)
 * [jQuery](https://jquery.com)
@@ -12,18 +23,7 @@
 * [PACE](http://github.hubspot.com/pace/docs/welcome/)
 * [Validation Bootstrap](https://1000hz.github.io/bootstrap-validator/)
 
-### Инструменты разработчика
-* [Gulp](http://gulpjs.com)
-* [Sass](http://sass-lang.com)
-* [Bower](https://bower.io)
-
-### Инструменты разработки дизайна
-* Adobe Photoshop
-* Sketch
-* Adobe Illustrator
-
-
-#### Методология
+### Методология
 * [БЭМ](https://ru.bem.info/methodology/)
 
 
