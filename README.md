@@ -1,4 +1,6 @@
 # Camismo
+![Demo image](https://github.com/OOOX/OOOX.github.io/blob/master/dist/img/demo-img.png "Demo image")
+
 Салон красоты, г. Харьков. Демонстрация сайта. Дизайн и верстка реализованы с помощью следующих инструментов Front-End разработчика:
 
 ## Инструменты разработчика
