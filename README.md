@@ -17,6 +17,10 @@
 * [Sass](http://sass-lang.com)
 * [Bower](https://bower.io)
 
+#### Методология
+* [БЭМ](https://ru.bem.info/methodology/)
+
+
 
 
 
