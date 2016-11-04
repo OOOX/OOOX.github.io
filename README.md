@@ -17,7 +17,7 @@
 * [Sass](http://sass-lang.com)
 * [Bower](https://bower.io)
 
-### Инструменты разработки макета
+### Инструменты разработки дизайна
 * Adobe Photoshop
 * Sketch
 * Adobe Illustrator
